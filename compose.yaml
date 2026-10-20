@@ -1,0 +1,12 @@
+services:
+  shope-pago:
+    build: .
+    ports:
+      - "8081:8080"
+    env_file:
+      - .env
+    volumes:
+      - shope_pago_data:/data
+
+volumes:
+  shope_pago_data:
